@@ -1,0 +1,11 @@
+.detail-empty{ margin-top:14px; color: rgba(255,255,255,.65); }
+.detail-grid{ margin-top:14px; display:grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap:12px; }
+.detail-left{ display:flex; flex-direction:column; gap:12px; }
+.detail-kpis{ display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:12px; }
+.kpi-card.small{ background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:12px; }
+.sentiment-pill{ margin-top:10px; display:inline-flex; border-width:1px; border-style:solid; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:800; }
+.pie-wrap{ grid-column:"1 / -1"; height:260px; }
+.detail-right{ display:flex; flex-direction:column; gap:12px; }
+.detail-title{ font-weight:900; margin-bottom:6px; }
+.bar-wrap{ height:340px; }
+.tip{ margin-top:10px; font-size:12px; color: rgba(255,255,255,.6); }

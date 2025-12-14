@@ -1,0 +1,50 @@
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(34,197,94,.18), transparent 60%), #0b0f14;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* App layout */
+.app-root{ min-height:100vh; width:100%; display:flex; align-items:flex-start; justify-content:center; padding:20px 12px; }
+.app-inner{ width:100%; max-width:1400px; margin:0 auto; }
+
+/* panels & grid */
+.grid-two{ margin-top:16px; display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:12px; }
+.panel{ background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:16px; color:inherit; }
+.card{ padding:16px; border-radius:12px; background: rgba(255,255,255,0.03); }
+.panel-inner{ display:flex; flex-direction:column; gap:10px; }
+
+/* inputs / buttons */
+.input-search{ padding:10px 12px; border-radius:12px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.04); color:inherit; outline:none; width:100%; }
+.segmented{ display:flex; gap:8px; flex-wrap:wrap; }
+.seg-btn{ padding:8px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color:inherit; cursor:pointer; font-weight:800; }
+.seg-btn.active{ background: rgba(34,197,94,.12); border-color: rgba(34,197,94,.35); }
+
+/* participants area */
+.participants-list-wrap{ display:flex; flex-direction:column; gap:10px; max-height:360px; overflow:auto; padding-right:6px; }
+
+/* top words chips */
+.chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+.chip{ padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.02); font-size:12px; font-weight:800; }
+
+/* detail */
+.detail-section{ margin-top:16px; }
+.detail-header{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.selected-txt{ font-size:12px; color: rgba(255,255,255,.65); }
+
+/* error box & footer */
+.error-box{ margin-top:14px; padding:12px; border-radius:12px; border:1px solid rgba(239,68,68,.35); background:rgba(239,68,68,.12); color:inherit; }
+.app-footer{ margin-top:18px; padding:10px; color:rgba(255,255,255,.55); font-size:12px; }
+
+/* responsive tweaks */
+@media (max-width:480px){
+  .app-root{ padding:12px 10px; }
+  .app-inner{ padding-left:6px; padding-right:6px; }
+  .participants-list-wrap{ max-height:280px; }
+  .overview-chart{ height:200px !important; }
+}
