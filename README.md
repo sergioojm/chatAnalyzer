@@ -17,7 +17,7 @@ Uso rápido:
 4. Pulsa "Subir ZIP" y selecciona el ZIP exportado de WhatsApp.
 5. Selecciona un participante para ver detalle y descarga el PDF si lo necesitas.
 
-Si quieres, reemplazo `https://sergioojm.github.io/chatAnalyzer/` por la URL exacta si me la indicas.
+
 - `src/hooks/useResponsive.js` — Hook para detectar tamaño de pantalla.
 
 - `src/utils/helpers.js` — Funciones de soporte: parsing, tokenización, construcción de estadísticas y `downloadPdfReport`.
