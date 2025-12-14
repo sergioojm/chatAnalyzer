@@ -1,13 +1,37 @@
+.header-bg{
+  /* hacer que el header abarque todo el ancho visual aunque el contenido esté centrado */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 28px 0 18px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.02) inset;
+  z-index: 1;
+}
+
+/* centrar contenido del header al ancho del app-inner */
 .app-header{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 12px;
   display:flex;
   flex-wrap:wrap;
   gap:12px;
   align-items:center;
   justify-content:space-between;
   width:100%;
+  color: inherit;
 }
 .header-left{ display:flex; flex-direction:column; gap:6px; min-width:220px; }
-.app-title{ font-size:20px; font-weight:900; }
-.app-sub{ font-size:12px; color: rgba(255,255,255,.65); }
-.app-sub.small{ font-size:12px; color: rgba(255,255,255,.55); }
+.app-title{ font-size:20px; font-weight:900; color: #fff; }
+.app-sub{ font-size:12px; color: rgba(255,255,255,.75); }
+.app-sub.small{ font-size:12px; color: rgba(255,255,255,.65); }
 .header-right{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end; }
+
+/* responsive header padding */
+@media (max-width:480px){
+  .header-bg{ padding:18px 0 12px; }
+  .app-title{ font-size:18px; }
+}

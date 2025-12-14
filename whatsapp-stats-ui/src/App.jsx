@@ -117,7 +117,7 @@ export default function App(){
         </div>
 
         {data && (
-          <div className="topwords">
+          <div className="topwords" style={{ marginTop:14 }}>
             <div className="panel-inner card">
               <div className="panel-title">Top 10 palabras (global)</div>
               <div className="chips">

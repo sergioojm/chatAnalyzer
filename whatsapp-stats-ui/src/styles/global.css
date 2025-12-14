@@ -4,14 +4,14 @@ body{
   margin:0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   -webkit-font-smoothing:antialiased;
-  background: radial-gradient(1200px 700px at 20% -10%, rgba(34,197,94,.18), transparent 60%), #0b0f14;
+  background: #0b0f14; /* ya no hay gradient global */
   color:#fff;
   overflow-x:hidden;
 }
 
 /* App layout */
 .app-root{ min-height:100vh; width:100%; display:flex; align-items:flex-start; justify-content:center; padding:20px 12px; }
-.app-inner{ width:100%; max-width:1400px; margin:0 auto; }
+.app-inner{ width:100%; max-width:1400px; margin:0 auto; padding:0 12px; } /* padding interior para evitar solapamientos en móvil */
 
 /* panels & grid */
 .grid-two{ margin-top:16px; display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:12px; }

@@ -5,7 +5,7 @@
 .participant-card.selected{ background: rgba(34,197,94,.10); border:1px solid rgba(34,197,94,.35); }
 .participant-top{ display:flex; justify-content:space-between; gap:12px; align-items:center; }
 .participant-meta{ display:flex; flex-direction:column; gap:6px; min-width:0; }
-.participant-name{ font-weight:800; font-size:16px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.participant-name{ font-weight:800; font-size:16px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color: rgba(255,255,255,.65); }
 .participant-sub{ font-size:12px; color: rgba(255,255,255,.65); }
 .participant-pill{ border-width:1px; border-style:solid; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; }
 .participant-stats{ display:flex; gap:10px; margin-top:12px; font-size:12px; color: rgba(255,255,255,.75); }

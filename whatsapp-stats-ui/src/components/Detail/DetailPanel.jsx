@@ -34,7 +34,7 @@ export default function DetailPanel({ selected, topWordsBar, pie, yAxisWidth, tr
               <PieChart>
                 <Tooltip />
                 <Legend />
-                <Pie data={pie} dataKey="value" nameKey="name" outerRadius={90} />
+                <Pie data={pie} dataKey="value" nameKey="name" outerRadius={80} />
               </PieChart>
             </ResponsiveContainer>
           </div>
